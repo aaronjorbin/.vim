@@ -2,7 +2,6 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-
 set noesckeys
 set autoindent
 set smartindent
@@ -57,4 +56,3 @@ set number " turn on line numbers
 " Set tab and shift-tab for moving between tabs
 nmap <Tab> gt
 nmap <S-Tab> gT
-
