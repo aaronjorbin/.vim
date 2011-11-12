@@ -2,11 +2,11 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-set noesckeys
+"set noesckeys
 set autoindent
 set smartindent
 
-set pastetoggle=<F2>
+set pastetoggle=<F5>
 
 set tabstop=4
 set shiftwidth=4
@@ -16,7 +16,15 @@ set nocompatible " explicitly get out of vi-compatible mode
 
 set noexrc " don't use local version of .(g)vimrc, .exrc
 
-set background=dark " we plan to use a dark background
+
+syntax enable
+syntax on
+syntax sync fromstart
+
+let g:solarized_termcolors=256
+
+set background=light
+colorscheme solarized
 
 set cpoptions=aABceFsmq
 "             |||||||||
@@ -35,10 +43,9 @@ set cpoptions=aABceFsmq
 "             |+-- :write updates alternative file name
 "             +-- :read updates alternative file name
 
-syntax on " syntax highlighting on
 
 set backspace=indent,eol,start " make backspace a more flexible
-"set backup " make backup files 
+set backup " make backup files 
 set directory=~/.vim/tmp " directory to place swap files in
 set fileformats=unix,dos,mac " support all three, in this order
 set iskeyword+=_,$,@,%,# " none of these are word dividers 
@@ -56,3 +63,8 @@ set number " turn on line numbers
 " Set tab and shift-tab for moving between tabs
 nmap <Tab> gt
 nmap <S-Tab> gT
+
+" When vimrc is edited, reload it
+" if you install this somewhere other than ~/.vim, you'll need to change the
+" last argument
+autocmd! bufwritepost vimrc source ~/.vim/vimrc
