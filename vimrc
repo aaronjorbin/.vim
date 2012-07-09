@@ -16,7 +16,6 @@ set nocompatible " explicitly get out of vi-compatible mode
 
 set noexrc " don't use local version of .(g)vimrc, .exrc
 
-
 syntax enable
 syntax on
 syntax sync fromstart
@@ -24,7 +23,6 @@ syntax sync fromstart
 let g:solarized_termcolors=256
 
 set background=light
-colorscheme solarized
 
 set cpoptions=aABceFsmq
 "             |||||||||
@@ -52,7 +50,6 @@ set iskeyword+=_,$,@,%,# " none of these are word dividers
 set mouse=a " use mouse everywhere
 set noerrorbells " don't make noise
 
-set cursorline " highlight current line
 set incsearch " BUT do highlight as you type you 
 set laststatus=2 " always show the status line
 set linespace=0 " insert extra pixel lines 
