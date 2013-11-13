@@ -10,7 +10,7 @@ set pastetoggle=<F5>
 
 set tabstop=4
 set shiftwidth=4
-set expandtab
+set noexpandtab
 
 set nocompatible " explicitly get out of vi-compatible mode
 
@@ -67,7 +67,11 @@ autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 expandtab
 autocmd FileType make setlocal noexpandtab shiftwidth=8
 " WordPress likes real tabs, so let's assume all php is that way
 autocmd FileType php setlocal noexpandtab shiftwidth=4
+" Real tabs in JS as well
+autocmd FileType js setlocal noexpandtab shiftwidth=4
 
+" For when you forget to sudo.. Really Write the file.
+cmap w!! w !sudo tee % >/dev/null
 
 " When vimrc is edited, reload it
 " if you install this somewhere other than ~/.vim, you'll need to change the
