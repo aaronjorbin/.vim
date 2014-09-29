@@ -88,6 +88,10 @@ nmap <Leader>p "+p
 nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
+
+" For SVN commit messages turn on spellcheck automatticly
+autocmd FileType svn       setlocal spell
+
 " When vimrc is edited, reload it
 " if you install this somewhere other than ~/.vim, you'll need to change the
 " last argument
