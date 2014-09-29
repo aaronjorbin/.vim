@@ -73,6 +73,21 @@ autocmd FileType js setlocal noexpandtab shiftwidth=4
 " For when you forget to sudo.. Really Write the file.
 cmap w!! w !sudo tee % >/dev/null
 
+" Map the leader to space
+let mapleader = "\<Space>"
+" space w = :w
+nnoremap <Leader>w :w<CR>
+" space q = :q
+nnoremap <Leader>q :q<CR>
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
+
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
 " When vimrc is edited, reload it
 " if you install this somewhere other than ~/.vim, you'll need to change the
 " last argument
