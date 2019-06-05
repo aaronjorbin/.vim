@@ -37,3 +37,6 @@
 [submodule "bundle/vim-terraform"]
 	path = bundle/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
+[submodule "bundle/vim-mdx-js"]
+	path = bundle/vim-mdx-js
+	url = https://github.com/jxnblk/vim-mdx-js
