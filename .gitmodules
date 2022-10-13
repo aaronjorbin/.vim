@@ -40,3 +40,9 @@
 [submodule "bundle/vim-mdx-js"]
 	path = bundle/vim-mdx-js
 	url = https://github.com/jxnblk/vim-mdx-js
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "bundle/vim-latex"]
+	path = bundle/vim-latex
+	url = https://github.com/vim-latex/vim-latex.git
